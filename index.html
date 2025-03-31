@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Album Manager</h1>
+    
+    <h2>Albums</h2>
+    <table id="albums">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Band</th>
+                <th>Title</th>
+                <th>Length</th>
+                <th>Release Year</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>    
+    
+    <h2>Add Album</h2>
+    <form id="addAlbumForm">
+        <input type="text" id="band" placeholder="Band" required>
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="length" placeholder="Length" required>
+        <input type="text" id="release" placeholder="Release Date" required>
+        <button type="submit">Add Album</button>
+    </form>
+
+    <h2>View Album</h2>
+    <div id="viewAlbum">
+    </div>
+</body>
+</html>
