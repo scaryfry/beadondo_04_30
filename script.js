@@ -21,9 +21,10 @@ async function fetchAlbums() {
             <td>${length}</td>
             <td>${release}</td>
             <td>
-                <button onclick="viewAlbum(${id})">View</button>
-                <button onclick="updateAlbum(${id})">Update</button>
-                <button onclick="deleteAlbum(${id})">Delete</button>
+                <a onclick="viewAlbum(${id})"><img src="search.png" alt="View"></a>
+                <a onclick="updateAlbum(${id})"><img src="reload.png" alt="Update"></a>
+                <a onclick="deleteAlbum(${id})"><img src="trash.png" alt="Delete"></a>
+
             </td>
         `;
         tbody.appendChild(tr);
